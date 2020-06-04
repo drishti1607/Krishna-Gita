@@ -1,5 +1,6 @@
 #body {
     background-color: black;
+    max-width: 100%;
 }
 
 #image {
@@ -10,24 +11,36 @@
     top: -28vh;
 }
 
+.emotions {
+    width: auto;
+    -webkit-box-shadow: 0px -1px 12px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow:    0px -1px 12px rgba(0, 0, 0, 0.48);
+    box-shadow:         0px -1px 12px rgba(0, 0, 0, 0.48);
+    padding-top:5px;
+    background:black;
+    border-top:1px solid #767676;
+    font-family:Verdana, Tahoma, Sans-Serif;
+    z-index: 100;
+}
+
 #heading {
     font: "Book Antiqua";
-    font-size: 70px;
+    font-size: 9.1vmin;
     font-weight: bold;
     color: black;
     position: absolute;
     left: 5.5vw;
-    top: -5.7vh;
+    top: 2.4vh;
 }
 
 #subHeading {
     font: "Book Antiqua";
-    font-size: 35px;
+    font-size: 4.6vmin;
     font-weight: bold;
     color: black;
-    position: absolute;
+    position: relative;
     left: 5.5vw;
-    top: 10.8vh;
+    top: 16.5vh;
 }
 
 #righteousness {
@@ -40,10 +53,10 @@
 
 #righteousnessText {
     font: "Book Antiqua";
-    font-size: 10;
+    font-size: 1.5vw;
     color: white;
     position: absolute;
-    left: 18.8vw;
+    left: 17.7vw;
     top: 92vh;
 }
 
@@ -57,10 +70,10 @@
 
 #confidenceText {
     font: "Book Antiqua";
-    font-size: 10;
+    font-size: 1.5vw;
     color: white;
     position: absolute;
-    left: 38.2vw;
+    left: 37.2vw;
     top: 92vh;
 }
 
@@ -74,10 +87,10 @@
 
 #selfdoubtText {
     font: "Book Antiqua";
-    font-size: 10;
+    font-size: 1.5vw;
     color: white;
     position: absolute;
-    left: 57vw;
+    left: 55.9vw;
     top: 92vh;
 }
 
@@ -91,9 +104,9 @@
 
 #anxietyText {
     font: "Book Antiqua";
-    font-size: 10;
+    font-size: 1.5vw;
     color: white;
     position: absolute;
-    left: 76.2vw;
+    left: 75.7vw;
     top: 92vh;
 }
