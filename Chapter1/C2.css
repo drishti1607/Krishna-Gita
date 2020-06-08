@@ -27,7 +27,7 @@ body {
 }
 
 .sidenav a:hover {
-    background-color: #4CAF50;
+    background-color: orange;
 }
 
 .main {
@@ -74,6 +74,7 @@ body {
 
   .devanagari {
     color: orange;
+    font-size: 2vw;
   }
 
   .emotion {
@@ -81,15 +82,30 @@ body {
     font-size: 4vw;
   }
 
+  #selfdoubt {
+    width: 6.7vw;
+    height: 12vh;
+    float: left;
+    padding-top: 1.5vw;
+    padding-right: 1vw;
+}
+
   .translation {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
 
   .explanation {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
   }
 
   .insights {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-style: italic;
+  }
+
+  .subHeadingImg {
+    padding-right: 1vw;
+    float: left;
+    height: 5vh;
+    width: 2.8vw;
   }

@@ -1,3 +1,5 @@
+@import url("../Assets/Font/style.css");
+
 #body {
     background-color: black;
     max-width: 100%;
@@ -24,23 +26,23 @@
 }
 
 #heading {
-    font: "Book Antiqua";
-    font-size: 9.1vmin;
+    font-family: 'Samarkan Normal';
+    font-size: 4.5vw;
     font-weight: bold;
     color: black;
     position: absolute;
     left: 5.5vw;
-    top: 2.4vh;
+    top: 2vh;
 }
 
 #subHeading {
-    font: "Book Antiqua";
-    font-size: 4.6vmin;
+    font-family: 'Book Antiqua';
+    font-size: 4.2vmin;
     font-weight: bold;
     color: black;
     position: relative;
     left: 5.5vw;
-    top: 16.5vh;
+    top: 19vh;
 }
 
 #righteousness {
@@ -52,7 +54,7 @@
 }
 
 #righteousnessText {
-    font: "Book Antiqua";
+    font-family: 'Book Antiqua';
     font-size: 1.5vw;
     color: white;
     position: absolute;
@@ -69,7 +71,7 @@
 }
 
 #confidenceText {
-    font: "Book Antiqua";
+    font-family: 'Book Antiqua';
     font-size: 1.5vw;
     color: white;
     position: absolute;
@@ -86,7 +88,7 @@
 }
 
 #selfdoubtText {
-    font: "Book Antiqua";
+    font-family: 'Book Antiqua';
     font-size: 1.5vw;
     color: white;
     position: absolute;
@@ -103,7 +105,7 @@
 }
 
 #anxietyText {
-    font: "Book Antiqua";
+    font-family: 'Book Antiqua';
     font-size: 1.5vw;
     color: white;
     position: absolute;
