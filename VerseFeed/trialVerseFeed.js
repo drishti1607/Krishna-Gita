@@ -18,3 +18,4 @@ function randomFeed(numOfVerses, numOfVersesDisplayed) {
     }
     return verseNum;
 }
+

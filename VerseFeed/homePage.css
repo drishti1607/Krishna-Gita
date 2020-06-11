@@ -1,0 +1,62 @@
+.body {
+    background-color: #FECF73;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    border-radius: 25px;
+}
+ 
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+ 
+.topnav a.active {
+    background-color:#FECF73;
+    color: black;
+}
+
+.heading {
+    font-family: 'Book Antiqua';
+    font-size: 4em;
+    width: 30vw;
+    font-weight: bold;
+    padding: 0.3em 0 0.2em 0.5em;
+}
+
+.randomVerse {
+    height: max-content;
+    width: 60vw;
+    background-color: #f2f2f2;
+    padding: 0.5em 0em 0em 0.5em;
+    border-radius: 25px;
+}
+
+.verse {
+    padding-left: 2em;
+    font-size: 1.4em;
+}
+
+.Img {
+    padding-right: 1vw;
+    float: left;
+    height: 5vh;
+    width: 2.8vw;
+}
+
+.subtext {
+    font-size: 1.2em;
+}
+
