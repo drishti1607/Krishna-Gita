@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="homePage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     </head>
     <body class="body" onload="randomFeedDom(10,3)">
 
@@ -18,6 +19,7 @@
         <div class="heading">Krishna's Gita</div>
 
         <div class="randomVerse" id="randomVerse1">
+            <p id="devanagri1" class="devanagri"></p> 
             <p id="verse1" class="verse"></p> 
             <img src="../Assets/Pictures/translation.png" class="Img">
             <p id="translation1" class="subText"></p> 
@@ -25,6 +27,7 @@
         </div>
         <br>
         <div class="randomVerse" id="randomVerse2">
+            <p id="devanagri2" class="devanagri"></p> 
             <p id="verse2" class="verse"></p> 
             <img src="../Assets/Pictures/translation.png" class="Img">
             <p id="translation2" class="subText"></p> 
@@ -32,14 +35,15 @@
         </div>
         <br>
         <div class="randomVerse" id="randomVerse3">
+            <p id="devanagri3" class="devanagri"></p> 
             <p id="verse3" class="verse"></p> 
             <img src="../Assets/Pictures/translation.png" class="Img">
             <p id="translation3" class="subText"></p> 
             <br>
         </div>
 
-        <script src = "trialVerseFeed.js"></script> 
-        <script src = "trialVerseFeedDom.js"></script>  
+        <script src = "RandomVerseFeed.js"></script> 
+        <script src = "VerseFeedDom.js"></script>  
         <script src = "verse.js"></script>  
     </body>
 </html>

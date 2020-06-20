@@ -53,20 +53,29 @@
     border-radius: 15px;
 }
 
-.verse {
-    padding-left: 2em;
+.devanagri {
+    margin-left: 4em;
     font-size: 1.4em;
+    color: brown;
+}
+
+.verse {
+    margin-left: 4em;
+    font-size: 1.4em;
+    color: brown;
 }
 
 .Img {
     padding-right: 1vw;
     float: left;
-    height: 5vh;
-    width: 2.8vw;
+    height: 2em;
+    width: 2em;
 }
 
-.subtext {
-    font-size: 1.2em;
+.subText {  /*not working*/
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 3em;
 }
 
 #krishna {

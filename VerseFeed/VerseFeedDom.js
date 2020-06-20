@@ -2,6 +2,9 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
     var verseNum = randomFeed(numOfVerses, numOfVersesDisplayed); //10,3
     var i = 0;
     while(i < numOfVersesDisplayed) {
+        var devanagri = document.getElementById("devanagri" + (i+1));
+        var devanagriContent = Gita.Verses[(verseNum[i] - 1)].content.devanagri;
+        devanagri.innerHTML = devanagriContent;
         var varVerse = document.getElementById("verse" + (i+1)); 
         var verseContent = Gita.Verses[(verseNum[i] - 1)].content.shloka;
         varVerse.innerHTML = verseContent;
