@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="homePage.css">
+        <link rel="stylesheet" href="toggle.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <meta charset =UTF-8>
     </head>
@@ -12,35 +13,40 @@
             <a href="#book">Browse Book</a>
             <a class="active" href="#home">Home</a>
             <input type="text" placeholder="Search">
+            <a href="#home" class="heading">Krishna's Gita</a>
         </div>
 
         
         <img id="krishna" src="../Assets/Pictures/krishna.jpg">
 
-        <div class="heading">Krishna's Gita</div>
+
+        <label class="switch">
+            <input type="checkbox" id="langToggle" onclick="shlokaLangEng(3)">
+            <span class="slider round"></span>
+        </label>
 
         <div class="randomVerse" id="randomVerse1">
+            <input type="image" src="../Assets/Pictures/translation.png" class="Img" onclick="transliteration()">
             <p id="devanagri1" class="devanagri"></p> 
             <p id="verse1" class="verse"></p> 
-            <img src="../Assets/Pictures/translation.png" class="Img">
-            <p id="translation1" class="subText"></p> 
-            <br>
+            <p id="translation1" class="subText"></p>
+            <button class="readMore" onclick="explanation()">Read more</button> 
         </div>
         <br>
         <div class="randomVerse" id="randomVerse2">
+            <input type="image" src="../Assets/Pictures/translation.png" class="Img" onclick="transliteration()">
             <p id="devanagri2" class="devanagri"></p> 
             <p id="verse2" class="verse"></p> 
-            <img src="../Assets/Pictures/translation.png" class="Img">
             <p id="translation2" class="subText"></p> 
-            <br>
+            <button class="readMore" onclick="explanation()">Read more</button> 
         </div>
         <br>
         <div class="randomVerse" id="randomVerse3">
+            <input type="image" src="../Assets/Pictures/translation.png" class="Img" onclick="transliteration()">
             <p id="devanagri3" class="devanagri"></p> 
             <p id="verse3" class="verse"></p> 
-            <img src="../Assets/Pictures/translation.png" class="Img">
             <p id="translation3" class="subText"></p> 
-            <br>
+            <button class="readMore" onclick="explanation()">Read more</button> 
         </div>
 
         <script src = "RandomVerseFeed.js"></script> 
