@@ -1,9 +1,19 @@
+.toggleText {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  vertical-align: middle;
+  color: brown;
+}
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 3em;
+    height: 1.5em;
+    margin-left: 0.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   
   /* Hide default HTML checkbox */
@@ -29,21 +39,21 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
+    height: 1.1em;
+    width: 1.1em;
+    left: 0.2em;
+    bottom: 0.2em;
+    background-color: whitesmoke;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color:black;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px black;
   }
   
   input:checked + .slider:before {
@@ -54,7 +64,7 @@
 
   /* Rounded sliders */
 .slider.round {
-    border-radius: 34px;
+    border-radius: 2em;
   }
   
   .slider.round:before {
@@ -66,4 +76,7 @@
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     margin-left: 0.5em;
+    border: none;
+    background-color: whitesmoke;
   }
+

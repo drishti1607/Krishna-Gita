@@ -9,21 +9,24 @@
     <body class="body" onload="randomFeedDom(10,3)">
 
         <div class="topnav">
+            <span class="heading">Krishna's Gita</span>
             <a href="#about">About</a>
             <a href="#book">Browse Book</a>
             <a class="active" href="#home">Home</a>
             <input type="text" placeholder="Search">
-            <a href="#home" class="heading">Krishna's Gita</a>
         </div>
 
         
         <img id="krishna" src="../Assets/Pictures/krishna.jpg">
 
-
-        <label class="switch">
-            <input type="checkbox" id="langToggle" onclick="shlokaLangEng(3)">
-            <span class="slider round"></span>
-        </label>
+        <div class="toggle">
+            <span class="toggleText">Devanagri</span>
+            <label class="switch">
+                <input type="checkbox" id="langToggle" onclick="shlokaLangEng(3)">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggleText">English</span>
+        </div>
 
         <div class="randomVerse" id="randomVerse1">
             <input type="image" src="../Assets/Pictures/translation.png" class="Img" onclick="transliteration()">

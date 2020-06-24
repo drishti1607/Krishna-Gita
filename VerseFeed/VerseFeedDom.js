@@ -51,7 +51,6 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
             para.insertBefore(insightText, para.childNodes[0]);
             para.insertBefore(insightImg, para.childNodes[0]);
             var br = document.createElement("br");
-            //para.appendChild(br);
         }
         
         if(Gita.Verses[(verseNum[i] - 1)].content.insights[0][1] != "") {
@@ -110,9 +109,7 @@ function transliteration() {
 function explanation() {
     var verse = event.target.parentNode.id;
     verse = document.getElementById(verse);
-    //console.log(verse);
     var exp = verse.getElementsByClassName("exp")[0];
-    //console.log(exp);
     var btn = event.target;
     if(exp.style.display == "inline") {
         exp.style.display = "none";
