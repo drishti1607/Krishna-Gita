@@ -191,7 +191,7 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
         bookmark.setAttribute("class","bookmark");
         para.insertBefore(bookmark, para.childNodes[0]);
 
-        var chapter = Gita.Verses[(verseNum[i] - 1)].chapter.slice(-1);
+        var chapter = Gita.Verses[(verseNum[i] - 1)].shloka[0];
         var bookmarkText = document.createElement("p");
         bookmarkText.innerHTML = " Ch " + chapter;
         bookmarkText.setAttribute("class", "bookmarkText");
