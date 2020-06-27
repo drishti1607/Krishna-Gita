@@ -1,8 +1,0 @@
-{
-    "localAppServer": {
-        "entryPoint": "app.js"
-    },
-    "urls": [
-        "http://localhost:8081"
-    ]
-}

@@ -15,7 +15,7 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
         while(k < Gita.Verses[(verseNum[i] - 1)].content.insights.length ) {
             if(Gita.Verses[(verseNum[i] - 1)].content.insights[k][0] != "") {
                 var insightImg= document.createElement("img");
-                insightImg.src="../Assets/Pictures/insight.png";
+                insightImg.src="Assets/Pictures/insight.png";
                 insightImg.setAttribute("class","Img");
                 var insightText=document.createElement("p");
                 insightText.setAttribute("class","subText");
@@ -28,7 +28,7 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
             }
             if(Gita.Verses[(verseNum[i] - 1)].content.insights[k][1] != "") {
                 var expImg= document.createElement("img");
-                expImg.src="../Assets/Pictures/explanation.png";
+                expImg.src="Assets/Pictures/explanation.png";
                 expImg.setAttribute("class","Img");
                 var expText=document.createElement("p");
                 expText.setAttribute("class","subText");
@@ -42,7 +42,7 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
         */
         if(Gita.Verses[(verseNum[i] - 1)].content.insights[0][0] != "") {
             var insightImg= document.createElement("img");
-            insightImg.src="../Assets/Pictures/insight.png";
+            insightImg.src="Assets/Pictures/insight.png";
             insightImg.setAttribute("class","Img");
             var insightText=document.createElement("p");
             insightText.setAttribute("class","insights");
@@ -55,7 +55,7 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
         
         if(Gita.Verses[(verseNum[i] - 1)].content.insights[0][1] != "") {
             var expImg= document.createElement("img");
-            expImg.src="../Assets/Pictures/explanation.png";
+            expImg.src="Assets/Pictures/explanation.png";
             expImg.setAttribute("class","Img");
             var expText=document.createElement("p");
             expText.setAttribute("class","subText");

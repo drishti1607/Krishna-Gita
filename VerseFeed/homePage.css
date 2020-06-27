@@ -84,6 +84,7 @@
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     margin-left: 3em;
+    margin-right: 1em;
 }
 
 .insights {
@@ -108,4 +109,9 @@
 
 .exp {
     display: none;
+}
+
+.readMore{
+    padding-left: 88%;
+    padding-bottom: 1%;
 }
