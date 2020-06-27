@@ -11,6 +11,7 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
         var varVerseTrans = document.getElementById("translation" + (i+1));
         var transContent = Gita.Verses[(verseNum[i] - 1)].content.translation;
         varVerseTrans.innerHTML = transContent;
+        var para = document.getElementById("randomVerse" + (i+1));
         /*
         while(k < Gita.Verses[(verseNum[i] - 1)].content.insights.length ) {
             if(Gita.Verses[(verseNum[i] - 1)].content.insights[k][0] != "") {
@@ -47,11 +48,20 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
             var insightText=document.createElement("p");
             insightText.setAttribute("class","insights");
             insightText.innerHTML=Gita.Verses[(verseNum[i] - 1)].content.insights[0][0];
-            var para = document.getElementById("randomVerse" + (i+1));
             para.insertBefore(insightText, para.childNodes[0]);
             para.insertBefore(insightImg, para.childNodes[0]);
-            var br = document.createElement("br");
         }
+        
+        var chapter = Gita.Verses[(verseNum[i] - 1)].chapter.slice(-1);
+        var bookmarkText = document.createElement("p");
+        bookmarkText.innerHTML = " Ch " + chapter;
+        bookmarkText.setAttribute("class", "bookmarkText");
+        para.insertBefore(bookmarkText, para.childNodes[0]);
+        
+        var bookmark = document.createElement("img");
+        bookmark.src = "Assets/Pictures/bookmark.png";
+        bookmark.setAttribute("class","bookmark");
+        para.insertBefore(bookmark, para.childNodes[1]);
         
         if(Gita.Verses[(verseNum[i] - 1)].content.insights[0][1] != "") {
             var expImg= document.createElement("img");
@@ -60,7 +70,6 @@ function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
             var expText=document.createElement("p");
             expText.setAttribute("class","subText");
             expText.innerHTML=Gita.Verses[(verseNum[i] - 1)].content.insights[0][1];
-            var para = document.getElementById("randomVerse" + (i+1));
             var expDiv = document.createElement("div");
             expDiv.appendChild(expImg);
             expDiv.appendChild(expText);
