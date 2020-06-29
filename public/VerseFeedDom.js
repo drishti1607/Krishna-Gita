@@ -1,3 +1,4 @@
+
 function randomFeedDom(numOfVerses, numOfVersesDisplayed) {
     var verseNum = randomFeed(numOfVerses, numOfVersesDisplayed); //10,3
     var i = 0;
