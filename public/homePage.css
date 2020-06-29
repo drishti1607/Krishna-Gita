@@ -104,10 +104,12 @@
 
 .transliteration {
     display: none;
+    color: brown;
 }
 
 .sanskrit {
     display: none;
+    color: brown;
 }
 
 .exp {
