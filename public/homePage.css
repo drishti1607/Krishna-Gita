@@ -60,11 +60,12 @@
     margin-left: 4em;
     font-size: 1.4em;
     color: brown;
+    line-height: 200%;
 }
 
 .verse {
     margin-left: 4em;
-    font-size: 1.4em;
+    font-size: 1.0em;
     color: brown;
     display: none;
     font-family: 'Open Sans', sans-serif;
