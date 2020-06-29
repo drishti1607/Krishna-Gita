@@ -88,24 +88,46 @@ function shlokaLangEng(numOfVersesDisplayed) { //hide devanagri
     while(i < numOfVersesDisplayed) {
         var devanagri = document.getElementById("devanagri" + (i+1));
         var verse = document.getElementById("verse" + (i+1));
-
+        var trans = document.getElementById("translation" + (i+1));
         var checkBox = document.getElementById("langToggle");
         if (checkBox.checked == true){
+            var trans = document.getElementById("translation" + (i+1));
+            var list = trans.getElementsByClassName("sanskrit");
+            for(var j=0; j<list.length; j++)
+            {
+                list[j].style.display = "none"
+            }
             devanagri.style.display = "none";
             verse.style.display = "block";
         } else {
+            var trans = document.getElementById("translation" + (i+1));
+            var list = trans.getElementsByClassName("transliteration");
+            for(var j=0; j<list.length; j++)
+            {
+                list[j].style.display = "none"
+            }
             devanagri.style.display = "block";
             verse.style.display = "none";
         }
         i++;
     }
+    var trans = document.getElementById("translation" + (i+1));    
 }
 
 function transliteration() {
+    var btn= document.getElementById("langToggle");
     var verse = event.target.parentNode.id;
     var num = verse.slice(-1);
     var trans = document.getElementById("translation" + num);
-    var list = trans.getElementsByClassName("transliteration");
+    if (btn.checked == true)
+    {
+        var list = trans.getElementsByClassName("transliteration");
+
+    }
+    else
+    {
+        var list = trans.getElementsByClassName('sanskrit');
+    }
     for(var i=0; i<list.length; i++) {
         if(list[i].style.display == "inline") {
             list[i].style.display = "none";
