@@ -65,7 +65,7 @@
 
 .verse {
     margin-left: 4em;
-    font-size: 1.2em;
+    font-size: 1.0em;
     color: brown;
     display: none;
     font-family: 'Open Sans', sans-serif;
@@ -73,8 +73,6 @@
 
 
 .Img {
-    padding-right: 0.5em;
-    padding-top: 1em;
     float: left;
     height: 2em;
 }
