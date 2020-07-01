@@ -58,7 +58,7 @@
 
 .devanagri {
     margin-left: 4em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: brown;
     line-height: 200%;
 }
@@ -73,12 +73,8 @@
 
 
 .Img {
-    padding-right: 0.5em;
-    padding-top: 1em;
     float: left;
     height: 2em;
-    width: 2em;
-
 }
 
 .subText {  
@@ -89,7 +85,7 @@
 }
 
 .insights {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     margin-left: 3em;
 }
@@ -106,6 +102,12 @@
 
 .transliteration {
     display: none;
+    color: brown;
+}
+
+.sanskrit {
+    display: none;
+    color: brown;
 }
 
 .exp {
@@ -131,4 +133,13 @@
     margin-right: 0.3em;
     color: black;
     margin-top: -0.2em;
+}
+
+@media (orientation: portrait) {
+    #krishna {
+        display: none;
+    }
+    .randomVerse {
+        width: 100vw;
+    }
 }
